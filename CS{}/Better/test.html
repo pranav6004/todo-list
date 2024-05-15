@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <h1>To-Do List</h1>
+            <p>Personalize your tasks in an efficient manner</p>
+            <ul id="todo-list"></ul>
+            <button id="addButton" onclick="showPopup()">Add List</button>
+          
+        </div>
+        <div class="right-container" id="detailsContainer">
+            <div class="details-header" id="detailsHeader"></div>
+            <button id="addSubListButton" onclick="addSubList()">+</button>
+        
+            <div class="details-content" id="detailsContent"></div>
+        </div>
+    </div>
+    <div id="popup">
+        <label for="taskInput">Enter your task:</label>
+        <input type="text" id="taskInput">
+        <button onclick="addItem()">Add</button>
+        <button onclick="hidePopup()">Cancel</button>
+    </div>
+    <div class="container" id="completed-list">
+        <h2>Completed</h2>
+        <ul id="completed-items"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
