@@ -1,2 +1,2 @@
 # todo-list
-few bugs nad issues
+few bugs and issues
